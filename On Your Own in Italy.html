@@ -104,13 +104,14 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 
 body {
 background-color: white;
-color: black;
+color: white;
 font-family: Georgia,Futura,Impact,Helvetica,sans-serif;
 font-size: 125%;
+background: #111 fixed url("images/background.jpg") center / contain no-repeat;
 }
 
 a {
-color: blue;
+color: DeepSkyBlue;
 }
 a:hover {
 color: crimson;
@@ -118,21 +119,17 @@ text-decoration: none;
 border-bottom: 4px solid crimson;
 }
 
-#ui-bar {
-display: none;
-}
-
-.ruben {
-  color: red
-}
-
-.george {
-  color: green
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Page" tags="" position="725,382" size="100,100">&lt;&lt;audio mainsong stop&gt;&gt;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Page" tags="" position="725,382" size="100,100">&lt;&lt;audio mainsong stop&gt;&gt;
 &lt;&lt;audio mainsong play&gt;&gt;
-&lt;h1&gt;On Your Own in Italy (Tentative Name)&lt;/h1&gt;
+&lt;h1&gt;On Your Own in Italy&lt;/h1&gt;
+[[Start|Start Menu]] 
+/*[img[images/playbutton.png][Start Menu]]*/
 
-[[Begin|Start Menu]] </tw-passagedata><tw-passagedata pid="2" name="Synopsis" tags="" position="1167,341" size="100,100">&lt;img src = &quot;images/technology.jpg&quot; class=&quot;insertPhoto&quot;/&gt;
+&lt;&lt;set $lvl1complete to false&gt;&gt;
+&lt;&lt;set $lvl2complete to false&gt;&gt;
+&lt;&lt;set $lvl3complete to false&gt;&gt;
+&lt;&lt;set $lvl4complete to false&gt;&gt;
+&lt;&lt;set $lvl5complete to false&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Synopsis" tags="" position="1167,341" size="100,100">&lt;img src = &quot;images/technology.jpg&quot; class=&quot;insertPhoto&quot;/&gt;
 
 In 2077, language is no longer a barrier to anyone. 
 
@@ -147,19 +144,19 @@ There&#39;s no place in the world where you would have trouble ordering a meal o
 Italy!
 
 
-Well... everything else is still under development, but you can cycle back to the start of this deliverable by clicking [[here|Start Menu]]. </tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="399,341" size="100,100">&lt;&lt;cacheaudio &quot;mainsong&quot; &quot;audio/background.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Start Menu" tags="" position="995,497" size="100,100">&lt;center&gt;
+Well... everything else is still under development, but you can cycle back to the start of this deliverable by clicking [[here|Start Menu]]. </tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="399,341" size="100,100">&lt;&lt;cacheaudio &quot;mainsong&quot; &quot;audio/background.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Start Menu" tags="" position="995,496" size="100,100">&lt;center&gt;
 &lt;img src = &quot;images/logo.jpg&quot; class=&quot;insertPhoto&quot; style=&quot;width:300px;height:300px;&quot;/&gt;
-&lt;&lt;set $numWrong
+&lt;&lt;set $numWrong = 0&gt;&gt;
 Start Menu
 
 [[Intro|Synopsis]]
 [[Instructions|Instruct]]
 [[Level I|Lv1_Start]]
-[[Level II|Lv2]]
-[[Level III|Lv3]]
-[[Level IV|Lv4]]
-[[Level V|Lv5]]
-[[Ending|Ending]]
+&lt;&lt;if $lvl1complete is true&gt;&gt;[[Level II|Lv2]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $lvl2complete is true&gt;&gt;[[Level III|Lv3]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $lvl3complete is true&gt;&gt;[[Level IV|Lv4]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $lvl4complete is true&gt;&gt;[[Level V|Lv5]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $lvl5complete is true&gt;&gt;[[Ending|Ending]]&lt;&lt;/if&gt;&gt;
 &lt;/center&gt;</tw-passagedata><tw-passagedata pid="6" name="Lv1_Start" tags="" position="636,747" size="100,100">&lt;img src = &quot;images/TrajanArch.png&quot; class=&quot;insertPhoto&quot; style=&quot;width:600px;height:300px;&quot;/&gt;
 
 You finally find yourself in an open space. You overhear two men talking.
@@ -173,19 +170,19 @@ The policeman approaches you.
 &lt;img src = &quot;images/policeman.png&quot; class=&quot;insertPhoto&quot; style=&quot;width:200px;height:200px;&quot;/&gt;
 
 Poliziotto: &quot;Ei tu! Come ti chiami?
-[[&quot;Io mi chiami, Marko&quot;|Lv1_2]]
-[[&quot;Tu ti chiami, Marko&quot;|Lv1_Start_Wrong]]
-[[&quot;Lei si chiama, Marko&quot;|Lv1_Start_Wrong]]
-[[&quot;Lui si chima, Marko&quot;|Lv1_Start_Wrong]]</tw-passagedata><tw-passagedata pid="7" name="Lv2" tags="" position="871,750" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="8" name="Lv3" tags="" position="1009,748" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Lv4" tags="" position="1157,751" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Lv5" tags="" position="1300,744" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="11" name="Ending" tags="" position="1408,730" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="Lv1_2" tags="" position="562,876" size="100,100">&lt;img src = &quot;images/policeman.png&quot; class=&quot;insertPhoto&quot; style=&quot;width:200px;height:200px;&quot;/&gt;
+[[&quot;Io mi chiami, Marko&quot;|Lv1_2][$numWrong to 0]]
+[[&quot;Tu ti chiami, Marko&quot;|Lv1_Start_Wrong][$numWrong to $numWrong+1]]
+[[&quot;Lei si chiama, Marko&quot;|Lv1_Start_Wrong][$numWrong to $numWrong+1]]
+[[&quot;Lui si chima, Marko&quot;|Lv1_Start_Wrong][$numWrong to $numWrong+1]]</tw-passagedata><tw-passagedata pid="7" name="Lv2" tags="" position="871,750" size="100,100">In Progress...
+
+[[Return to Home|Start Menu]]</tw-passagedata><tw-passagedata pid="8" name="Lv3" tags="" position="1009,748" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Lv4" tags="" position="1157,751" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Lv5" tags="" position="1300,744" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="11" name="Ending" tags="" position="1408,730" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="Lv1_2" tags="" position="562,875" size="100,100">&lt;img src = &quot;images/policeman.png&quot; class=&quot;insertPhoto&quot; style=&quot;width:200px;height:200px;&quot;/&gt;
 
 Policeman: &quot;Marko, eh? Dove abiti?&quot;
-[[&quot;Negli Stati Uniti, ma e&#39;. I&#39;m a tourist.&quot;|Lv1_3]]
-[[&quot;Io mi chiami, Marko. I already said it&quot;|Lv1_2_Wrong]]
-[[&quot;Come ti chiami?&quot;|Lv1_2_Wrong]]
-[[&quot;Arrivederci!&quot;|Lv1_2_Wrong]]</tw-passagedata><tw-passagedata pid="13" name="Lv1_Start_Wrong" tags="" position="696,883" size="100,100">&lt;&lt;set $numWrong += 1&gt;&gt;
-
-&lt;&lt;if $numWrong is 1&gt;&gt; 
-Oops... Wrong answer! You can try again [[here|Lv1_Start]]
+[[&quot;Negli Stati Uniti, ma e&#39;. I&#39;m a tourist.&quot;|Lv1_3][$numWrong to 0]]
+[[&quot;Io mi chiami, Marko. I already said it&quot;|Lv1_2_Wrong][$numWrong to $numWrong+1]]
+[[&quot;Come ti chiami?&quot;|Lv1_2_Wrong][$numWrong to $numWrong+1]]
+[[&quot;Arrivederci!&quot;|Lv1_2_Wrong][$numWrong to $numWrong+1]]</tw-passagedata><tw-passagedata pid="13" name="Lv1_Start_Wrong" tags="" position="696,883" size="100,100">&lt;&lt;if $numWrong is 1&gt;&gt; 
+Oops... Wrong answer! You can try again [[here|Lv1_Start]].
 &lt;&lt;else&gt;&gt;
 Oh no! Looks like you guessed incorrectly for the second time in a row. Better luck next time! Click [[here|Lv1_Start]] to start from the beginning of the module or click [[here|Title Page]] to return to the main menu.
 &lt;&lt;/if&gt;&gt;
@@ -198,15 +195,22 @@ Oh no! Looks like you guessed incorrectly for the second time in a row. Better l
 &quot;I have to get behind that door!!!&quot;
 
 Input the code you got from Felippe:
-[[&quot;1 2 3 4 5 6 7&quot;|Lv1_3_Wrong]]
-[[&quot;7 12 80 13 0 16 5&quot;|Lv1_3_Wrong]]
-[[&quot;7 20 18 30 0 16 5&quot;|Lv1_4]]
-[[&quot;18 7 20 5 60 33 50&quot;|Lv1_3_Wrong]]</tw-passagedata><tw-passagedata pid="15" name="Lv1_2_Wrong" tags="" position="695,1025" size="100,100">&lt;&lt;set $numWrong += 1&gt;&gt;
-
-Oops... Wrong answer! You can try again [[here|Lv1_2]]</tw-passagedata><tw-passagedata pid="16" name="Lv1_4" tags="" position="486,1175" size="100,100">&lt;img src = &quot;images/LockUnlocked.png&quot; class=&quot;insertPhoto&quot; style=&quot;width:300px;height:300px;&quot;/&gt; 
+[[&quot;1 2 3 4 5 6 7&quot;|Lv1_3_Wrong][$numWrong to $numWrong+1]]
+[[&quot;7 12 80 13 0 16 5&quot;|Lv1_3_Wrong][$numWrong to $numWrong+1]]
+[[&quot;7 20 18 30 0 16 5&quot;|Lv1_4][$numWrong to 0]]
+[[&quot;18 7 20 5 60 33 50&quot;|Lv1_3_Wrong][$numWrong to $numWrong+1]]</tw-passagedata><tw-passagedata pid="15" name="Lv1_2_Wrong" tags="" position="695,1026" size="100,100">&lt;&lt;if $numWrong is 1&gt;&gt; 
+Oops... Wrong answer! You can try again [[here|Lv1_2]].
+&lt;&lt;else&gt;&gt;
+Oh no! Looks like you guessed incorrectly for the second time in a row. Better luck next time! Click [[here|Lv1_Start]] to start from the beginning of the module or click [[here|Title Page]] to return to the main menu.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Lv1_4" tags="" position="476,1186" size="100,100">&lt;img src = &quot;images/LockUnlocked.png&quot; class=&quot;insertPhoto&quot; style=&quot;width:300px;height:300px;&quot;/&gt; 
 
 &quot;Yes I unlocked the door!!!&quot;
-[[Back to menu|Start Menu]]</tw-passagedata><tw-passagedata pid="17" name="Lv1_3_Wrong" tags="" position="636,1175" size="100,100">Oops... Wrong answer! You can try again [[here|Lv1_3]]</tw-passagedata><tw-passagedata pid="18" name="Instruct" tags="" position="1389,590" size="100,100">
+&lt;&lt;set $lvl1complete to true&gt;&gt;
+[[Back to menu|Start Menu]]</tw-passagedata><tw-passagedata pid="17" name="Lv1_3_Wrong" tags="" position="636,1175" size="100,100">&lt;&lt;if $numWrong is 1&gt;&gt; 
+Oops... Wrong answer! You can try again [[here|Lv1_3]].
+&lt;&lt;else&gt;&gt;
+Oh no! Looks like you guessed incorrectly for the second time in a row. Better luck next time! Click [[here|Lv1_Start]] to start from the beginning of the module or click [[here|Title Page]] to return to the main menu.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Instruct" tags="" position="1388,590" size="100,100">In order to advance to the end of the game, you must complete each level before moving on to the next. You will NOT be able to advance to the next level without completing the one before it.
 
 For each question, you will have a total of 2 attempts to choose or input the correct response. After a second incorrect response, you will unfortunately have to return to the very start.
 
