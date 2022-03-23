@@ -1,4 +1,4 @@
-# Italian-Language-Gamification
+# Fuga-di-Penitenziaria
 
 This repository holds all the files related to the game that Lis Dautaj, Alejandro Pacheco, and myself worked on together as part of a 1-credit hour course offered jointly by the Department of Italian Studies and the Department of Computer Science (IDS 290R). Our main task was to make a game that would serve as a learning supplement to students who are taking ITAL 101 (the first introductory class in Italian language).
 
