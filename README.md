@@ -4,4 +4,4 @@ This repository holds all the files related to the game that Lis Dautaj, Alejand
 
 The platform we used for this project was Twine, which made it easy for both the computer science students and the Italian studies student to change and alter the game along the way.
 
-The game is still a work-in-progress, and this repository will be uploaded weekly with new changes.
+The game is still a work-in-progress, and it is hosted online via the itch.io platform which can be found here: https://ecool7079.itch.io/fuga-dal-penitenziario.
